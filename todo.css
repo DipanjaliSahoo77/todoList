@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.extra_span {
+    color: orange;
+    text-decoration: line-through;
+}
+
+.todo_heading {
+    text-align: center;
+    font-family: Monospace;
+    font-weight: bold;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.createheading {
+    font-size: 30px;
+    animation: bounce 0.5s ease-out;
+
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes drop-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.taskUnder {
+    font-size: 20px;
+
+}
+
+.boxstyle {
+    background-color: white;
+    width: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.todo-items-container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.todo-item-container {
+    margin-top: 15px;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.label-container {
+    background-color: #f0e6d8;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orange;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+}
+
+.checkbox-label {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    width: 82%;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+    margin: 7px;
+}
+
+.todos-bg-container {
+    background-color: white;
+    height: 100vh;
+}
+
+.add-todo-button {
+    color: black;
+    background-color: orange;
+    font-family: "Roboto";
+    font-size: 12px;
+    border-width: 0px;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    font-weight: bold;
+    animation-name: drop-up;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.button {
+    color: black;
+    background-color: orange;
+    font-family: "Roboto";
+    font-size: 12px;
+    border-width: 0px;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    width: 90px;
+    margin-top: 20px;
+    font-weight: bold;
+    animation-name: drop-up;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.todoImage {
+    height: 350px;
+    width: 350px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
